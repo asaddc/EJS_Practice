@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper z-depth-2 comments-form">
+      <h5>Thank you <%= email %></h5>
+
+      <% if (courseCode) { %>
+        <h6><span class="font-weight-bold">Course Code:</span> <%= courseCode %> </h4>
+      <% } %>
+
+      <% if (courseName) { %>
+        <h6><span class="font-weight-bold">Course Name:</span> <%= courseName %> </h4>
+      <% } %>
+
+      <% if (favProgLang) { %>
+        <h6><span class="font-weight-bold">Favourite Prog. Lang:</span> <%= favProgLang %> </h4>
+      <% } %>
+
+      <% if (favSport) { %>
+        <h6><span class="font-weight-bold">Favourite Sport:</span> <%= favSport %> </h4>
+      <% } %>
+
+      <% if (comments) { %>
+        <h6><span class="font-weight-bold">Comments:</span> <%= comments %> </h4>
+      <% } %>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper comments-form z-depth-2">
+      <h4>Complete The Rest of The Fields:</h4>
+
+      <form method="post" action="/comment">
+        <div class="input-field">
+          <input id="courseCode" name="courseCode"  size="30"  type="text" class="validate" required>
+          <label for="courseCode">*Course Code</label>
+        </div>
+
+        <div class="input-field">
+          <input id="courseName" name="courseName"  size="30"  type="text" class="validate" required>
+          <label for="courseName">*Course Name</label>
+        </div>
+
+        <div class="input-field">
+          <input id="email" name="email" readonly size="30"  type="text" class="validate"  value="<%= email %>" required>
+          <label for="email">*Email</label>
+        </div>
+
+        <div class="input-field">
+          <input id="favProgLang" name="favProgLang"  size="30"  type="text" class="validate">
+          <label for="favProgLang">Favourite Programming Language</label>
+        </div>
+
+        <div class="input-field">
+          <input id="favSport" name="favSport"  size="30"  type="text" class="validate">
+          <label for="favSport">Favourite Sport</label>
+        </div>
+
+        <div class="input-field">
+          <textarea id="comments" name="comments" class="materialize-textarea"></textarea>
+          <label for="comments">Comments</label>
+        </div>
+
+        <button class="btn-large waves-effect waves-light disabled" id="submit" type="submit" name="action">
+          Submit <i class="material-icons right">send</i>
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
+
+<script src="./js/commentsPulse.js"></script>
