@@ -11,11 +11,6 @@ module.exports = (app) => {
   //the form uses a post request to the same path ('/')
   app.post("/", (req, res) => {
     //use the controller function
-    const email = "amahmo31@my.centennialcollege.ca";
-    const password = "test123";
-
-    req.body.email === email && req.body.password === password
-      ? index.displayInfo(req, res)
-      : index.renderIndex(res, true);
+    index.displayInfo(req, res);
   });
 };

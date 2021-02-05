@@ -3,15 +3,15 @@ window.addEventListener("load", fireEventListeners, false);
 function fireEventListeners() {
   document
     .getElementById("courseCode")
-    .addEventListener("blur", addPulseEffectOnFormCompletion, false);
+    .addEventListener("keyup", addPulseEffectOnFormCompletion, false);
 
   document
     .getElementById("courseName")
-    .addEventListener("blur", addPulseEffectOnFormCompletion, false);
+    .addEventListener("keyup", addPulseEffectOnFormCompletion, false);
 
   document
     .getElementById("email")
-    .addEventListener("blur", addPulseEffectOnFormCompletion, false);
+    .addEventListener("keyup", addPulseEffectOnFormCompletion, false);
 }
 
 function addPulseEffectOnFormCompletion() {

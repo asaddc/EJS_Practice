@@ -3,11 +3,11 @@ window.addEventListener("load", fireEventListeners, false);
 function fireEventListeners() {
   document
     .getElementById("email")
-    .addEventListener("blur", addPulseEffectOnFormCompletion, false);
+    .addEventListener("keyup", addPulseEffectOnFormCompletion, false);
 
   document
     .getElementById("password")
-    .addEventListener("blur", addPulseEffectOnFormCompletion, false);
+    .addEventListener("keyup", addPulseEffectOnFormCompletion, false);
 }
 
 function addPulseEffectOnFormCompletion() {

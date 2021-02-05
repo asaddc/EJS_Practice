@@ -25,7 +25,7 @@
         </div>
 
         <div class="input-field">
-          <input id="email" name="email" readonly size="30"  type="text" class="validate"  value="<%= email %>" required>
+          <input id="email" name="email" readonly size="30"  type="email" class="validate"  value="<%= email %>" required>
           <label for="email">*Email</label>
         </div>
 
@@ -44,9 +44,15 @@
           <label for="comments">Comments</label>
         </div>
 
-        <button class="btn-large waves-effect waves-light disabled" id="submit" type="submit" name="action">
-          Submit <i class="material-icons right">send</i>
-        </button>
+        <div class="space-between">
+          <button class="btn-large waves-effect waves-light disabled" id="submit" type="submit" name="action">
+            Submit <i class="material-icons right">send</i>
+          </button>
+
+          <a href="/logout" class="btn-large waves-effect waves-light red" id="logout" name="logout">
+            Logout <i class="material-icons right">send</i>
+          </a>
+        </div>
       </form>
     </div>
   </body>
