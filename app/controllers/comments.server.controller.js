@@ -1,4 +1,3 @@
-const indexController = require("./index.server.controller");
 const thankYouController = require("./thankYou.server.controller");
 
 exports.renderCommentsView = (req, res) => {
@@ -9,6 +8,5 @@ exports.renderCommentsView = (req, res) => {
 };
 
 exports.redirectToThankYou = (req, res) => {
-  console.log(req.body);
   thankYouController.renderThankYouView(req, res);
 };
